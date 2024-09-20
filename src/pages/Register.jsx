@@ -141,18 +141,19 @@ const Register = () => {
             <div className="bg-white p-6 rounded-lg shadow-lg max-w-sm w-full">
               <h3 className="text-xl font-semibold mb-4">Yakin dengan data yang diisi?</h3>
               <div className="flex justify-between">
+              <button
+                  onClick={handleCancel}
+                  className="bg-red-500 text-white py-2 px-4 rounded"
+                >
+                  Batal
+                </button>
                 <button
                   onClick={handleConfirm}
                   className="bg-green-500 text-white py-2 px-4 rounded"
                 >
                   Iya
                 </button>
-                <button
-                  onClick={handleCancel}
-                  className="bg-red-500 text-white py-2 px-4 rounded"
-                >
-                  Batal
-                </button>
+                
               </div>
             </div>
           </div>
